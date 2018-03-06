@@ -9,7 +9,7 @@ export class AppComponent {
   public title:string;
   constructor(private service: ContactService){
     this.service.getCall().subscribe(res=>{
-      this.title = res["text"];
+      this.title = res["test"];
     });
   }
 }
